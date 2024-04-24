@@ -1,11 +1,147 @@
 [
     {
-        "leggings1": {
-            "name":"Pastal teal seamless leggings",
-            "price": 87.50,
-            "image": "leggings1.jpg",
-            "decription": "",
-            "color": "black"
+        "top1": {
+            "name":"Pastel Teal Seamless Top",
+            "price": 39.99,
+            "image": "top1.jpg",
+            "description": "",
+            "color": "Pastel Teal"
         }
+
+        
+    },
+
+    {
+        "top2": {
+            "name":"Burnt Umber Seamless Top",
+            "price": 39.99,
+            "image": "top2.jpg",
+            "description": "",
+            "color": "Burnt Umber"
+        }
+
+        
+    },
+
+    {
+        "top3": {
+            "name":"Cream Seamless Top",
+            "price": 39.99,
+            "image": "top3.jpg",
+            "description": "",
+            "color": "Cream"
+        }
+
+        
+    },
+
+    {
+        "shorts1": {
+            "name":"Pastel Teal Seamless Shorts",
+            "price": 46.99,
+            "image": "shorts1.jpg",
+            "description": "",
+            "color": "Pastel Teal"
+        }
+
+        
+    },
+
+    {
+        "shorts2": {
+            "name":"Burnt Umber Seamless Shorts",
+            "price": 46.99,
+            "image": "shorts2.jpg",
+            "description": "",
+            "color": "Burnt Umber"
+        }
+
+        
+    },
+
+    {
+        "shorts3": {
+            "name":"Cream Seamless Shorts",
+            "price": 46.99,
+            "image": "shorts3.jpg",
+            "description": "",
+            "color": "Cream"
+        }
+
+        
+    }, 
+
+    {
+        "leggings1": {
+            "name":"Pastel Teal Seamless Leggings",
+            "price": 58.99,
+            "image": "leggings1.jpg",
+            "description": "",
+            "color": "Pastel Teal"
+        }
+
+        
+    }, 
+
+    {
+        "leggings2": {
+            "name":"Burnt Umber Seamless Leggings",
+            "price": 58.99,
+            "image": "leggings2.jpg",
+            "description": "",
+            "color": "Burnt Umber"
+        }
+
+        
+    }, 
+
+    {
+        "leggings3": {
+            "name":"Cream Seamless Leggings",
+            "price": 58.99,
+            "image": "leggings3.jpg",
+            "description": "",
+            "color": "Cream"
+        }
+
+        
+    }, 
+    
+
+    {
+        "leggingsSet1": {
+            "name":"Pastel Teal Seamless Leggings Set",
+            "price": 89.95,
+            "image": "leggingSet1.jpg",
+            "description": "",
+            "color": "Pastel Teal"
+        }
+
+        
+    }, 
+    
+    {
+        "leggingsSet2": {
+            "name":"Burnt Umber Seamless Leggings Set",
+            "price": 89.95,
+            "image": "leggingSet2.jpg",
+            "description": "",
+            "color": "Burnt Umber"
+        }
+
+        
+    },
+
+    {
+        "leggingsSet3": {
+            "name":"Cream Seamless Leggings Set",
+            "price": 89.95,
+            "image": "leggingSet3.jpg",
+            "description": "",
+            "color": "Cream"
+        }
+
+        
     }
+
 ]
