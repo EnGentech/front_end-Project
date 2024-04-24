@@ -1,3 +1,30 @@
 #productHead{
     padding-top: 30px;
 }
+
+.wallpaper{
+    background-image: url("/static/images/background_images/background.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#baseIndex{
+    padding: 25% 0% 10%;
+}
+
+#banner{
+    height: 70px;
+    background-color: #bfdbdd;
+}
+
+#bannerContent{
+    width: 70%; 
+    margin: auto auto;  
+}
+
+#banner p{
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #045149;
+    text-align: center;
+}

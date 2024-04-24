@@ -5,43 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="stylesheet" href="static/styles/rendering.css">
-    <script src="static/scripts/basic.js" defer></script>
-    <script src="static/scripts/validation.js" defer></script>
-    <script src="static/scripts/payStack.js" defer></script>
+    <link rel="stylesheet" href="static/styles/orderForm.css">
+    <link rel="shortcut icon" href="static/images/logo/logo.png" type="image/x-icon">
+    <script src="static/scripts/index.js" defer></script>
+    <script src="static/scripts/common.js"></script>
 </head>
 <body>
+    <div id="orderForm">
+        <form action="#" id="order-form">
+            <div id="closeButton"></div> 
+            <center><h4>Recipient Form</h4></center><hr>
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+                <p id="firstname-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+                <p id="lastname-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <p id="email-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="address">Residential Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter your residential address">
+                <p id="address-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                <p id="phone-error" class="error-message"></p>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="patronage">Thank you for your patronage!</p>
+        </form>
+        
+        
+    </div>
+
     <header>
         <section id="blogView">
             <p>free shipping: <span>limited time: <span>00:00:00</span></span></p>
         </section>
         <section id="header">
-            <div class="logo">LaptopHUB</div>
-            <div class="menu-icon">&#9776;</div>
+            <img src="static/images/logo/logo.png" alt="logo" id="logo">
             <div class="nav-container">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products & Services</a></li>
+                        <li><a href="products.html">Shop Seamless Collection</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#" onclick="scrollToSection('signup-form')" id="signup">Sign_UP</a></li>
                     </ul>
                 </nav>
                 
             </div> <hr class="seperator">
             <div id="flexContent">
                 <div id="headerContent">
-                    <h4 id="category">Categories &blacktriangledown;</h4>
+                    <center><h3 id="renderAll"><marquee>We offer seamless service and more</marquee></h3></center>
                     <ul>
-                        <li><a href="#" id="apple">Apple</a></li>
-                        <li><a href="#" id="hp">HP</a></li>
-                        <li><a href="#" id="asus">Azus</a></li>
-                        <li><a href="#" id="dell">Dell</a></li>
-                        <li><a href="#" id="toshiba">Toshiba</a></li>
-                        <li><a href="#" id="accessories">Accessories</a></li>
+                        <li><a href="?category=tops" id="tops">Tops</a></li>
+                        <li><a href="?category=shorts" id="shorts">Shorts</a></li>
+                        <li><a href="?category=leggings" id="leggings">Leggings</a></li>
+                        <li><a href="?category=sets" id="sets">Sets</a></li>
                     </ul>
                 </div>
             </div>
+            
         </section>
     </header> 
     
@@ -55,42 +89,18 @@
             <div class="wallpaper">
                 <section id="baseIndex">
                     <h3>When Quality and meets comfort and <br>style</h3>
-                    <p id="shopCollection">Shop seemless collection</p>
-                    <button id="explore">Explore</button>
+                    <p id="shopCollection">Shop Seamless Collection</p>
+                    <button id="explorebtn">Shop All</button>
                 </section>
             </div>
+
+            <h2 id="fProducts">Featured Products</h2>
 
             <section class="allContent">
                                
             </section>
-    
-            <!-- Sign Up track -->
-            <section class="signUP">
-                <h1>Sign up and get exclusive special deals</h1>
-                <form action="#" id="signup-form">
-                    <div>
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Enter your username">
-                        <p id="username-error" class="error-message"></p>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
-                        <p id="email-error" class="error-message"></p>
-                    </div>
-                    <div>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                    </div>
-                    <div>
-                        <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
-                        <p id="password-match-error" class="error-message"></p>
-                    </div>
-                    <button type="submit">Sign Up</button>
-                </form>
+            
                 
-            </section>
             <p id="end">
                 <span id="asterisk">
                     * 
@@ -113,8 +123,32 @@
         
     </main>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+    <div class="footer">
+        <div class="content">
+            <section class="in_content">
+                <img src="{% static 'images/logo_light_hp.png' %}" alt="logo" id="logoLight">
+                <h5>Empowering learning</h5>
+                <img src="{% static 'images/call_icon.png' %}" alt=""><span class="phone_number">+2348039678842</span><h5>
+                <img src="{% static 'images/email_icon.png' %}" alt=""><span class="email">engen.inyang@gmail.com</span>
+            </section>
+
+            <section class="in_content">
+                <h3>Quick Links</h3>
+                <p>Courses</p>
+                <p>Departments</p>
+                <p>Mentors</p>
+                <p>Forum</p>
+            </section>
+
+            <section class="in_content">
+                <h3>Connect with us on social Media</h3>
+                <p>Follow us on social media for the latest news and <br>resources from us</p>
+                <img src="{% static 'images/all_media_static.png' %}" alt="" width="200px" height="30px">
+            </section>
+        </div>
+        <div class="footnote">
+            <p>&copy; Copyrights 2023 Heritage-eq | All rights reserved</p>
+        </div>
+    </div>
 </body>
 </html>
