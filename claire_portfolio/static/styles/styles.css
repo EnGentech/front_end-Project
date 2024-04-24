@@ -83,12 +83,13 @@ nav ul li a {
 }
 
 #headerContent ul {
-    width: 60%;
+    width: 20%;
+    padding-left: 30px;
     list-style-type: none;
-    margin: auto auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1%;
+    background-color: black;
+    position: absolute;
+    margin: 0px;
+
 }
 
 #headerContent ul a {
@@ -158,9 +159,16 @@ nav ul li a {
     box-shadow: 1px 1px 4px rgba(9, 0, 0, 0.386);
 }
 
-/* .itemList {
+.allContent{
     display: flex;
-} */
+    flex-wrap: wrap;
+}
+
+#category{
+    padding-left: 30px;
+    text-decoration: underline;
+    margin-top: 1%;
+}
 
 .orderedList {
     border: 2px solid #0A4D66;
@@ -202,49 +210,6 @@ nav ul li a {
 
 .buy button:focus{
     outline: none;
-}
-
-.more {
-    padding-top: 40px;
-    cursor: pointer;
-    color: gray;
-}
-
-.more:hover {
-    color: darkblue;
-}
-
-.highlight {
-    padding: 3% 0% 2% 3%;
-    display: none;
-}
-
-.highlight h4{
-    color: #0092CA;
-}
-
-.highlight ul{
-    padding-left: 3%;
-}
-
-.highlight ul li{
-    font-size: small;
-    line-height: 1.8em;
-}
-
-.advert{
-    width: 130px;
-    height: 130px;
-    text-align: center;
-    border: 1px solid gray;
-    border-radius: 15px;
-    padding-top: 10px;
-    float: right;
-}
-
-.advert img{
-    width: 110px;
-    height: 110px;
 }
 
 /* Sign Up logic */
@@ -387,10 +352,6 @@ footer {
         color: #fff;
         font-size: 24px;
         cursor: pointer;
-    }
-
-    #headerContent {
-        margin-top: 8%;
     }
 
     nav ul li a {
