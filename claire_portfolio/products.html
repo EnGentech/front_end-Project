@@ -5,24 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="stylesheet" href="static/styles/rendering.css">
-    <script src="static/scripts/basic.js" defer></script>
+    <link rel="stylesheet" href="static/styles/orderForm.css">
+    <link rel="shortcut icon" href="static/images/logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="static/styles/p&s.css">
-    <script src="static/scripts/render.js"></script>
+    <script src="static/scripts/collections.js" defer></script>
+    <script src="static/scripts/index.js"></script>
+    <script src="static/scripts/order.js"></script>
+    <script src="static/scripts/common.js"></script>
+
 </head>
 <body>
+    <div id="orderForm">
+        <form action="#" id="order-form">
+            <div id="closeButton"></div> 
+            <center><h4>Recipient Form</h4></center><hr>
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+                <p id="firstname-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+                <p id="lastname-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <p id="email-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="address">Residential Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter your residential address">
+                <p id="address-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                <p id="phone-error" class="error-message"></p>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="patronage">Thank you for your patronage!</p>
+        </form>
+        
+        
+    </div>
+
     <header>
         <section id="blogView">
-            <p>Online shooping blog</p>
+            <p>free shipping: <span>limited time: <span>00:00:00</span></span></p>
         </section>
         <section id="header">
-            <div class="logo">LaptopHUB</div>
-            <div class="menu-icon">&#9776;</div>
+            <img src="static/images/logo/logo.png" alt="logo" id="logo">
             <div class="nav-container">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products & Services</a></li>
+                        <li><a href="products.html">Shop Seamless Collection</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
@@ -30,23 +70,59 @@
             </div> <hr class="seperator">
             <div id="flexContent">
                 <div id="headerContent">
-                    <center><h3 id="renderAll">Our Products and services entails:</h3></center>
+                    <h4 id="category">Shop by &blacktriangledown;</h4>
+                    <ul>
+                        <li><a href="?category=tops" id="tops">Tops</a></li>
+                        <li><a href="?category=shorts" id="shorts">Shorts</a></li>
+                        <li><a href="?category=leggings" id="leggings">Leggings</a></li>
+                        <li><a href="?category=sets" id="sets">Sets</a></li>
+                    </ul>
                 </div>
             </div>
+            
         </section>
     </header> 
-    
+
     <section id="empty">
 
     </section>
-
-    <main>
-        <center><h1 id="productHead">Products & Services</h1></center>
-
-        <div class="lpContent">
     
+    <main class="content">
+        <div id="banner">
+            <section id="bannerContent">
+                <p>
+                    Want a complete look? Sets are the way to go! We’re offering matching tops with the option of shorts or leggings, with $$ off!
+                </p>
+            </section>
         </div>
+                
+        <div id="hideContentArea">
+            <section class="allContent">
+                               
+            </section>
+            
+            <p id="end">
+                <span id="asterisk">
+                    * 
+                </span>
+                Emails submitted are subject to our Privacy Notice
+            </p>
+        </div>
+
+        <div id="hideApple">
+            <div class="lpContent">
+    
+            </div>
+        </div>
+
+        <div id="hideHP">
+            <div class="hPContent">
+    
+            </div>
+        </div>
+        
     </main>
+
     <footer>
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>

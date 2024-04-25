@@ -30,19 +30,10 @@ header{
 }
 
 #header {
-    background-color: #0092CA;
+    background-color: #045149;
     color: #fff;
     padding: 1rem;
     height: 130px;
-}
-
-#blogView {
-    background-color: white;
-    text-align: right;
-    color: black;
-    padding: 0.3% 5% 0.3%;
-    font-size: 0.8em;
-    color: gray
 }
 
 .nav-container {
@@ -82,17 +73,43 @@ nav ul li a {
     text-decoration: none;
 }
 
+#headerContent{
+    margin-left: -20px;
+}
+
 #headerContent ul {
-    width: 60%;
+    width: 15%;
+    height: 35vh;
+    padding-left: 30px;
     list-style-type: none;
-    margin: auto auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1%;
+    background-color: #bfdbdd;
+    position: absolute;
+    margin: 0px;
+    display: none;
+    font-size: 1.5em;
+}
+
+#headerContent ul li{
+    padding-top: 15px;
+    transition: transform 0.3s ease; 
+}
+
+#headerContent ul li:hover{
+    font-size: 1.2em;
+    transform: scale(0.9)
+}
+
+#blogView {
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 0.3% 5% 0.3%;
+    font-size: 1em;
+    color: gray
 }
 
 #headerContent ul a {
-    color: white;
+    color: #045149;
     text-decoration: none;
 }
 
@@ -104,41 +121,74 @@ nav ul li a {
     height: 155px;
 }
 
-#mainHeader {
-    background-color: #064259;
-    padding: 1% 0px 1% 10%;
+.wallpaper{
+    background-image: url("/static/images/background_images/bodyImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#baseIndex {
+    text-align: center;
+    padding: 15% 0% 25%;
+    font-weight: lighter;
+    font-family: serif;
     color: white;
-    margin-bottom: 40px;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.24);
 }
 
-#mainHeader p {
+#shopCollection {
+    text-align: center;
+    color: white;
+    font-size: 0.5em;
+}
+
+#explorebtn {
+    padding: 1% 7% 1% 7%;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.85);
+    border: none; 
+    box-shadow: 1px 1px 4px white;
     font-size: 0.8em;
+    margin-top: 1%;
+    font-weight: bolder;
+    transition: transform 0.3s ease; 
 }
 
-#floatLappyRight img{
-    float: right;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 2%;
+#explorebtn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 1px solid darkblue;
+    font-size: 0.9em;
+    color: darkblue;
+    transform: scale(0.9)
 }
 
 .contentArea {
-    width: 60%;
+    width: 350px;
+    height: 540px;
     background-color: white;
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     margin: 10px auto 10px auto;
     box-shadow: 1px 1px 4px rgba(9, 0, 0, 0.386);
 }
 
-.itemList {
+.allContent{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.order{
-    flex: 0.3;
-    padding-top: 30px;
+#category{
+    padding: 0px 0px 6px 30px;
+    margin-top: 1%;
+    cursor: pointer;
+    width: 150px;
+}
+
+#category:hover{
+    color: black;
 }
 
 .orderedList {
@@ -151,123 +201,40 @@ nav ul li a {
 }
 
 .featureImage {
-    width: 160px;
-    height: 130px;
-    flex: 0.8;
+    width: 330px;
+    height: 400px;
 }
 
 .featureImage img {
-    width: 160px;
-    height: 120px
+    width: 330px;
+    height: 400px
 }
 
-.description{
-    flex: 2;
-}
-
-.description h4 {
-    width: 30vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.buy {
-    padding-top: 40px;
+.name{
+    text-align: center;
 }
 
 .buy button {
     background-color: #0A4D66;
     color: white;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 20px 30px;
     border: none;
+    font-weight: bolder;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.more {
-    padding-top: 40px;
-    cursor: pointer;
-    color: gray;
+.buy button:hover{
+    background-color: #0a4d6690;;
 }
 
-.more:hover {
-    color: darkblue;
+.buy button:focus{
+    outline: none;
 }
 
-.highlight {
-    padding: 3% 0% 2% 3%;
-    display: none;
-}
-
-.highlight h4{
-    color: #0092CA;
-}
-
-.highlight ul{
-    padding-left: 3%;
-}
-
-.highlight ul li{
-    font-size: small;
-    line-height: 1.8em;
-}
-
-.advert{
-    width: 130px;
-    height: 130px;
+.no-item-message{
     text-align: center;
-    border: 1px solid gray;
-    border-radius: 15px;
-    padding-top: 10px;
-    float: right;
-}
-
-.advert img{
-    width: 110px;
-    height: 110px;
-}
-
-/* Sign Up logic */
-.signUP h1 {
-    text-align: center;
-    padding: 3% 0% 3% 0%;
-    font-size: 2em;
-}
-
-#signup-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#signup-form input[type="text"],
-#signup-form input[type="email"],
-#signup-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#signup-form button {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#signup-form button:hover {
-    background-color: #45a049;
 }
 
 .error-message {
@@ -293,7 +260,7 @@ input:focus{
 
 .price{
     color: rgb(66, 8, 8);
-    font-size: 0.8em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -312,17 +279,72 @@ input:focus{
     display: hide;
 }
 
-
-
-
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+#shopAll{
+    color: white;
+    text-decoration: none;
 }
+
+#fProducts {
+    margin: 50px 0px 20px 60px;
+    font-size: 2.5em !important;
+}
+
+#logo{
+    height: 50px;
+    width: 140px;
+    float: left;
+}
+
+
+.footer{
+    background: linear-gradient(white, transparent);
+    padding-top: 2%;
+}
+
+.freq_questions .content{
+    border-bottom: 2px solid #FFB661;
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.in_content h5{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.in_content h3{
+    color: #033B21;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.phone_number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.content p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footnote{
+    margin: auto auto;
+    margin-top: 3%;
+    border-top: 2px solid rgb(0, 69, 0);
+    width: 90%;
+}
+
+.footnote p{
+    font-family: 'Inika', serif;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 18px;
+}
+
 
 .menu-icon {
     display: none;
@@ -368,10 +390,6 @@ footer {
         color: #fff;
         font-size: 24px;
         cursor: pointer;
-    }
-
-    #headerContent {
-        margin-top: 8%;
     }
 
     nav ul li a {

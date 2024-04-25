@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(248, 242, 242);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+    background-color: #FFC947;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+#header {
+    background-color: #0092CA;
+    color: #fff;
+    padding: 1rem;
+    height: 130px;
+}
+
+.wallpaper{
+    background-image: url("/static/images/background_images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 30px;
+}
+
+#baseIndex {
+    text-align: center;
+    padding: 15% 0% 25%;
+    font-weight: lighter;
+    font-family: serif;
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+#shopCollection {
+    text-align: center;
+    color: white;
+    font-size: 0.5em;
+}
+
+#explore {
+    padding: 1% 7% 1% 7%;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(49, 73, 140, 0.85);
+    border: none; 
+    box-shadow: 1px 1px 4px white;
+    font-size: 0.8em;
+    margin-top: 1%;
+    font-weight: bolder;
+    transition: transform 0.3s ease; 
+}
+
+#explore:hover{
+    cursor: pointer;
+    background-color: rgba(177, 192, 200, 0.822);
+    color: darkblue;
+    border: 1px solid darkblue;
+    font-size: 0.9em;
+    transform: scale(0.9)
+}
+
+#blogView {
+    background-color: white;
+    text-align: right;
+    color: black;
+    padding: 0.3% 5% 0.3%;
+    font-size: 0.8em;
+    color: gray
+}
+
+.nav-container {
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 50px;
+    padding-bottom: 1.2%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ef0510;
+    transform: scale(1.5);
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#headerContent ul {
+    width: 60%;
+    list-style-type: none;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+
+#headerContent ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#headerContent a:hover {
+    color: blue;
+}
+
+#empty {
+    height: 155px;
+}
+
+#mainHeader {
+    background-color: #064259;
+    padding: 1% 0px 1% 10%;
+    color: white;
+}
+
+#mainHeader p {
+    font-size: 0.8em;
+}
+
+#floatLappyRight img{
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.contentArea {
+    width: 60%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px auto 10px auto;
+    box-shadow: 1px 1px 4px rgba(9, 0, 0, 0.386);
+}
+
+.itemList {
+    display: flex;
+}
+
+.order{
+    flex: 0.3;
+    padding-top: 30px;
+}
+
+.orderedList {
+    border: 2px solid #0A4D66;
+    color: #0A4D66;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.featureImage {
+    width: 160px;
+    height: 130px;
+    flex: 0.8;
+}
+
+.featureImage img {
+    width: 160px;
+    height: 120px
+}
+
+.description{
+    flex: 2;
+}
+
+.description h4 {
+    width: 30vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buy {
+    padding-top: 40px;
+}
+
+.buy button {
+    background-color: #0A4D66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more {
+    padding-top: 40px;
+    cursor: pointer;
+    color: gray;
+}
+
+.more:hover {
+    color: darkblue;
+}
+
+.highlight {
+    padding: 3% 0% 2% 3%;
+    display: none;
+}
+
+.highlight h4{
+    color: #0092CA;
+}
+
+.highlight ul{
+    padding-left: 3%;
+}
+
+.highlight ul li{
+    font-size: small;
+    line-height: 1.8em;
+}
+
+.advert{
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding-top: 10px;
+    float: right;
+}
+
+.advert img{
+    width: 110px;
+    height: 110px;
+}
+
+/* Sign Up logic */
+.signUP h1 {
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+    font-size: 2em;
+}
+
+#signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#signup-form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signup-form button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+#asterisk{
+    color: red;
+    font-size: 1em;
+}
+
+#end{
+    font-size: 0.8em;
+    text-align: center;
+    color: gray;
+    margin: 2% 0% 3%;
+}
+
+input:focus{
+    outline: none
+}
+
+.price{
+    color: rgb(66, 8, 8);
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#signup{
+    background-color: #5e2020;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+}
+
+#signup:hover{
+    background-color: white;
+    border: 1px solid brown;
+}
+
+#hideApple{
+    display: hide;
+}
+
+#goal{
+    text-align: center;
+    padding: 0.5% 0% 2% 0%;
+    font-size: 1.5em;
+    color:rgb(239, 230, 230);
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+.footer{
+    background: linear-gradient(white, transparent);
+    padding-top: 2%;
+}
+
+.freq_questions .content{
+    border-bottom: 2px solid #FFB661;
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.in_content h5{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.in_content h3{
+    color: #033B21;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.phone_number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.content p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footnote{
+    margin: auto auto;
+    margin-top: 3%;
+    border-top: 2px solid rgb(0, 69, 0);
+    width: 90%;
+}
+
+.footnote p{
+    font-family: 'Inika', serif;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 18px;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+#logoLight{
+    width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        margin-left: 2%;
+    }
+
+    #headerContent ul {
+        width: 80%;
+    }
+
+    #mainHeader {
+        padding: 1% 0px 1% 5%;
+    }
+
+    .contentArea {
+        width: 80%;
+    }
+
+    .advert {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #040404bf;
+        width: 100%;
+    }
+
+    .nav-container.active {
+        display: block;
+    }
+
+    .nav-container nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-container nav ul li {
+        margin-bottom: 8px;
+    }
+
+    .nav-container nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #headerContent {
+        margin-top: 8%;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease; 
+    }
+    
+    nav ul li a:hover {
+        color: #4A90E2;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #headerContent {
+        display: none;
+    }
+
+    #floatLappyRight img {
+        display: none;
+    }
+
+    #goal{
+        display: none;
+    }
+
+    .itemList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #baseIndex{
+        display: none;
+    }
+}

@@ -1,0 +1,72 @@
+.lpContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.lpItem {
+    width: calc(25% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(128, 128, 128, 0.345); 
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(9, 0, 0, 0.208);
+}
+
+main {
+    padding: 30px 50px;
+}
+
+.lpImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+.lpDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lpPrice {
+    color: blue;
+    font-weight: bold;
+}
+
+.lpBuyButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.lpBuyButton:hover {
+    background-color: darkblue;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 1200px) {
+    .lpItem {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lpItem {
+        width: calc(100% - 20px);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .lpItem {
+        width: calc(100% - 20px);
+    }
+}
