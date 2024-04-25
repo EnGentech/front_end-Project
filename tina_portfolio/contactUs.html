@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="stylesheet" href="static/styles/rendering.css">
-    <script src="static/scripts/basic.js" defer></script>
-    <link rel="stylesheet" href="static/styles/p&s.css">
-    <script src="static/scripts/render.js"></script>
+    <link rel="stylesheet" href="static/styles/contactUs.css">
+    <script src="static/scripts/contactUs.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,33 +27,52 @@
                 </nav>
                 
             </div> <hr class="seperator">
-            
-            <div id="flexContent">
-                <div id="headerContent">
-                    <ul>
-                        <li><a href="#" id="apple">Apple</a></li>
-                        <li><a href="#" id="hp">HP</a></li>
-                        <li><a href="#" id="asus">Azus</a></li>
-                        <li><a href="#" id="dell">Dell</a></li>
-                        <li><a href="#" id="toshiba">Toshiba</a></li>
-                        <li><a href="#" id="accessories">Accessories</a></li>
-                    </ul>
-                </div>
-            </div>
+            <p id="goal">Customer Satisfaction is our goal</p>
         </section>
     </header> 
     
     <section id="empty">
 
     </section>
+    
+    <main class="content">
 
-    <main>
-        <center><h1 id="productHead">Products & Services</h1></center>
-
-        <div class="lpContent">
-            
+        <div class="wallpaper">
+            <section id="baseInex">
+                <div class="containerEnvelope">
+                    <div class="container">
+                        <center><h2>Reach Out to our Customer Care</h2><hr></center>
+                        <form id="contactForm" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                            <div class="error" id="nameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                            <div class="error" id="emailError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="error" id="phoneError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea id="comment" name="comment"></textarea>
+                            <div class="error" id="commentError"></div>
+                        </div>
+                        <button type="submit">Submit</button>
+                        <button type="button" id="resetButton">Reset</button>
+                    </form>
+                    </div>     
+                </div>
+            </section>
         </div>
+
     </main>
+
     <footer>
         <div class="footer">
             <div class="content">

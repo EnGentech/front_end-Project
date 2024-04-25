@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="stylesheet" href="static/styles/rendering.css">
     <script src="static/scripts/basic.js" defer></script>
-    <script src="static/scripts/validation.js" defer></script>
     <script src="static/scripts/payStack.js" defer></script>
-    <script type="module" src="static/scripts/render.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,25 +20,14 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products & Services</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#" onclick="scrollToSection('signup-form')" id="signup">Sign_UP</a></li>
                     </ul>
                 </nav>
                 
             </div> <hr class="seperator">
-            <div id="flexContent">
-                <div id="headerContent">
-                    <ul>
-                        <li><a href="#" id="apple">Apple</a></li>
-                        <li><a href="#" id="hp">HP</a></li>
-                        <li><a href="#" id="asus">Azus</a></li>
-                        <li><a href="#" id="dell">Dell</a></li>
-                        <li><a href="#" id="toshiba">Toshiba</a></li>
-                        <li><a href="#" id="accessories">Accessories</a></li>
-                    </ul>
-                </div>
-            </div>
+            <p id="goal">Customer Satisfaction is our goal</p>
         </section>
     </header> 
     
@@ -62,6 +48,13 @@
                 Explore our wide range of laptops from renowned brands
             </p>
             
+        </div>
+        <div class="wallpaper">
+            <section id="baseIndex">
+                <h3>Crafting the realm of Technology with  <br>quality products</h3>
+                <p id="shopCollection">Your satisfaction our pride</p>
+                <button id="explore">Explore</button>
+            </section>
         </div>
         
         <div id="hideContentArea">
@@ -285,39 +278,6 @@
                 </div>
             </div>
     
-            <!-- Sign Up track -->
-            <section class="signUP">
-                <h1>Sign up and get exclusive special deals</h1>
-                <form action="#" id="signup-form">
-                    <div>
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Enter your username">
-                        <p id="username-error" class="error-message"></p>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
-                        <p id="email-error" class="error-message"></p>
-                    </div>
-                    <div>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                    </div>
-                    <div>
-                        <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
-                        <p id="password-match-error" class="error-message"></p>
-                    </div>
-                    <button type="submit">Sign Up</button>
-                </form>
-                
-            </section>
-            <p id="end">
-                <span id="asterisk">
-                    * 
-                </span>
-                Emails submitted are subject to our Privacy Notice
-            </p>
         </div>
 
         <div id="hideApple">
@@ -335,7 +295,33 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div class="footer">
+            <div class="content">
+                <section class="in_content">
+                    <img src="static/images/logo/logoLp.png" alt="logo" id="logoLight">
+                    <h5>Technology at its best</h5>
+                    <span class="phone_number">&#9742; +2347064432907</span><h5>
+                        &#9993; <span class="email">tinatechlab@gmail.com</span>
+                </section>
+    
+                <section class="in_content">
+                    <h3>Quick Links</h3>
+                    <p><a href="contactUs.html">Contact Us</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="products.html">Our Products</a></p>
+                </section>
+    
+                <section class="in_content">
+                    <h3>Connect with us on social Media</h3>
+                    <p>Follow us on social media for the latest news and <br>resources from us</p>
+                    <p>&#62220; <a href="www.facebook.com" target="_blank">Facebook</a></p>
+                    <p>&#128172; <a href="www.twitter.com" target="_blank">Twitter</a></p>
+                </section>
+            </div>
+            <div class="footnote">
+                <p>&copy; Copyrights 2023 LappyHUB | All rights reserved</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

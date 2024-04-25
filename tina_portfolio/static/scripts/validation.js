@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('signup-form').addEventListener('submit', function(event) {
+    document.getElementById('order-form').addEventListener('submit', function(event) {
         event.preventDefault();
         
         var usernameInput = document.getElementById('username');

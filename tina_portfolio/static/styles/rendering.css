@@ -1,33 +1,72 @@
-.appleContent {
-    margin: 0 50px;
+.lpContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.laptop-item {
-    display: inline-block;
-    width: calc(25% - 40px);
-    margin: 10px 20px; 
+.lpItem {
+    width: calc(25% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(128, 128, 128, 0.345); 
+    border-radius: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(9, 0, 0, 0.208);
 }
 
-.laptop-item img {
+main {
+    padding: 30px 50px;
+}
+
+.lpImage {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px; 
 }
 
-.laptop-item h2 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.laptop-item p {
-    margin: 5px 0;
+.lpDescription {
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.laptop-item p.price {
+.lpPrice {
     color: blue;
+    font-weight: bold;
+}
+
+.lpBuyButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.lpBuyButton:hover {
+    background-color: darkblue;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 1200px) {
+    .lpItem {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lpItem {
+        width: calc(100% - 20px);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .lpItem {
+        width: calc(100% - 20px);
+    }
 }
